@@ -1,112 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon_io/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon_io/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon_io/favicon-16x16.png">
-        <link rel="manifest" href="./img/favicon_io/site.webmanifest">
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-        <script src="https://kit.fontawesome.com/eeb9412f42.js" crossorigin="anonymous"></script>
-        <title>Relive - Home</title>
-    </head>
-    <body>
-        <header class="flex justify-between items-center mx-5 pt-2">
-            <img class="w-32 md:w-[149px]" src="./img/logo.png" alt="">
-            
-            <!-- NAVIGATION BAR FOR LARGER DEVICES -->
-            <nav>
-                <ul class="max-sm:hidden flex gap-5">
-                    <li class="text-[#00c4bb] font-semibold underline underline-offset-4"><a href="#">Home</a></li>
-                    <li class="text-slate-600 font-semibold"><a href="./pages/services.html">Services</a></li>
-                    <li class="text-slate-600 font-semibold"><a href="./pages/about.html">About us</a></li>
-                    <li class="text-slate-600 font-semibold"><a href="./pages/contacts.html">Contacts</a></li>
-                    <li class="text-slate-600 font-semibold"><a href="">Log out</a></li>
-                </ul>
-            </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./img/favicon_io/site.webmanifest" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script
+      src="https://kit.fontawesome.com/eeb9412f42.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Relive - Home</title>
+  </head>
+  <body>
+    <header class="flex justify-between items-center mx-5 pt-2">
+      <img class="w-32 md:w-[149px]" src="./img/logo.png" alt="" />
 
-            <div class="bg-orange-600 rounded-full text-center grid place-content-center border-3 border-gray-500 text-white w-10 h-10">
-                <p class="text-xl"><i class="fa-solid fa-user"></i></p>
-            </div>
+      <!-- NAVIGATION BAR FOR LARGER DEVICES -->
+      <nav>
+        <ul class="max-sm:hidden flex gap-5">
+          <li class="text-[#00c4bb] font-semibold underline underline-offset-4">
+            <a href="#">Home</a>
+          </li>
+          <li class="text-slate-600 font-semibold">
+            <a href="./pages/services.html">Services</a>
+          </li>
+          <li class="text-slate-600 font-semibold">
+            <a href="./pages/about.html">About us</a>
+          </li>
+          <li class="text-slate-600 font-semibold">
+            <a href="./pages/contacts.html">Contacts</a>
+          </li>
+          <li class="text-slate-600 font-semibold"><a href="">Log out</a></li>
+        </ul>
+      </nav>
 
-            <!-- ==== NAVIGATION BAR FOR MOBILE ==== -->
-            <nav class="fixed bottom-0 left-0 right-0 sm:hidden justify-item-center border-t border-slate-300 bg-white">
-                <ul class="flex justify-around py-1">
-                    <li class="text-[#00c4bb] font-semibold flex flex-col items-center px-2 pt-1"><i class="fa-solid fa-house"></i><a href="#"><span class="text-xs">Home</span></a></li>
-                    <li class="text-slate-600 font-semibold flex flex-col items-center px-2 pt-1"><i class="fa-solid fa-briefcase-medical"></i><a href="./pages/services.html"><span class="text-xs">Services</span></a></li>
-                    <li class="text-slate-600 font-semibold flex flex-col items-center px-2 pt-1"><i class="fa-solid fa-circle-info"></i><a href="./pages/about.html"><span class="text-xs">About us</span></a></li>
-                    <li class="text-slate-600 font-semibold flex flex-col items-center px-2 pt-1"><i class="fa-solid fa-address-book"></i><a href="./pages/contacts.html"><span class="text-xs">Contacts</span></a></li>
-                    <li class="text-slate-600 font-semibold flex flex-col items-center px-2 pt-1"> <i class="fa-solid fa-right-from-bracket"></i><a href=""><span class="text-xs">Log out</span></a></li>
-                </ul>
-            </nav>
-        </header>
-            
-        <!-- ==== BANNER SECTION ==== -->
-        <section class="bg-[url(./img/banner.png)] min-h-[40vh] md:min-h-[90vh] mt-3 bg-center bg-cover">
-            <div class="md:w-2/3 pt-[20px] p-5 md:p-15">
-                <h2 class="text-white text-[40px] md:text-[48px] lg:text-[65px] xl:text-[80px] font-semibold">Rediscover Youth, <span class="text-[#00c4bb]"> <br> Redefine Life.</span></h2>
-                <p class="text-white max-[361px]:pt-2 text-justify max-[361px]:pb-4 py-7 md:py-9">Embrace a renewed sense of vitality and confidence with advanced anti-aging therapies. At Relive, we help you unlock the best version of yourself, inside and out.</p>
-                <button class="text-white bg-[#00c4bb] py-2 md:py-3 text-center px-5 rounded-full hover:cursor-pointer font-semibold">Contact us</button>
-            </div>
-        </section>
+      <div
+        class="bg-orange-600 rounded-full text-center grid place-content-center border-3 border-gray-500 text-white w-10 h-10"
+      >
+        <p class="text-xl"><i class="fa-solid fa-user"></i></p>
+      </div>
 
-        <!-- ==== MEET RELIVE SECTION ==== -->
-        <section class="py-10 px-5 md:px-10">
-            <div class="grid gap-4 lg:gap-10 xl:gap-1 md:grid-cols-2 items-center text-center md:text-left">
-                <img class="md:h-full" src="./img/MeetRelive.png" alt="">
-                <div>
-                    <h1 class="text-4xl lg:text-6xl font-semibold">Meet <span class="text-[#00c4bb]">Relive</span></h1>
-                    <p class="py-4 lg:py-7 text-justify">Relive is a premium anti-aging clinic offering advanced, science-based therapies to support longevity and overall wellness. We blend cutting-edge medical technology with personalized care to help you feel your best at any age.</p>
-                <button class="text-white bg-[#00c4bb] py-2 md:py-3 text-center px-5 rounded-full hover:cursor-pointer font-semibold">Learn more</button>
-                </div>
-            </div>
-        </section>
+      <!-- ==== NAVIGATION BAR FOR MOBILE ==== -->
+      <nav
+        class="fixed bottom-0 left-0 right-0 sm:hidden justify-item-center border-t border-slate-300 bg-white"
+      >
+        <ul class="flex justify-around py-1">
+          <li
+            class="text-[#00c4bb] font-semibold flex flex-col items-center px-2 pt-1"
+          >
+            <i class="fa-solid fa-house"></i
+            ><a href="#"><span class="text-xs">Home</span></a>
+          </li>
+          <li
+            class="text-slate-600 font-semibold flex flex-col items-center px-2 pt-1"
+          >
+            <i class="fa-solid fa-briefcase-medical"></i
+            ><a href="./pages/services.html"
+              ><span class="text-xs">Services</span></a
+            >
+          </li>
+          <li
+            class="text-slate-600 font-semibold flex flex-col items-center px-2 pt-1"
+          >
+            <i class="fa-solid fa-circle-info"></i
+            ><a href="./pages/about.html"
+              ><span class="text-xs">About us</span></a
+            >
+          </li>
+          <li
+            class="text-slate-600 font-semibold flex flex-col items-center px-2 pt-1"
+          >
+            <i class="fa-solid fa-address-book"></i
+            ><a href="./pages/contacts.html"
+              ><span class="text-xs">Contacts</span></a
+            >
+          </li>
+          <li
+            class="text-slate-600 font-semibold flex flex-col items-center px-2 pt-1"
+          >
+            <i class="fa-solid fa-right-from-bracket"></i
+            ><a href=""><span class="text-xs">Log out</span></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-        <!-- PRODUCTS SECTION -->
-        <section>
-            <div class="text-center px-5 md:px-20">
-                <h1 class="text-4xl lg:text-6xl font-semibold">Meet <span class="text-[#00c4bb]">Relive</span></h1>
-                <p class="pt-1 lg:py-5 text-justify md:text-center">Relive is a premium anti-aging clinic offering advanced, science-based therapies to support longevity and overall wellness. We blend cutting-edge medical technology with personalized care to help you feel your best at any age.</p>
-            </div>
-        </section>
+    <!-- ==== BANNER SECTION ==== -->
+    <section
+      class="bg-[url(./img/banner.png)] min-h-[40vh] md:min-h-[90vh] mt-3 bg-center bg-cover"
+    >
+      <div class="md:w-2/3 pt-[20px] p-5 md:p-15">
+        <h2
+          class="text-white text-[40px] md:text-[48px] lg:text-[65px] xl:text-[80px] font-semibold"
+        >
+          Rediscover Youth,
+          <span class="text-[#00c4bb]">
+            <br />
+            Redefine Life.</span
+          >
+        </h2>
+        <p
+          class="text-white max-[361px]:pt-2 text-justify max-[361px]:pb-4 py-7 md:py-9"
+        >
+          Embrace a renewed sense of vitality and confidence with advanced
+          anti-aging therapies. At Relive, we help you unlock the best version
+          of yourself, inside and out.
+        </p>
+        <button
+          class="text-white bg-[#00c4bb] py-2 md:py-3 text-center px-5 rounded-full hover:cursor-pointer font-semibold"
+        >
+          Contact us
+        </button>
+      </div>
+    </section>
 
-        <!-- ==== TREATMENTS SECTION ==== -->
-        <section class="py-10 pb-20 md:py-20 px-5 lg:px-10 xl:px-30">
-            <h1 class="text-4xl lg:text-6xl font-semibold text-center">Our Specialized <span class="text-[#00c4bb]">Treatments</span></h1>
-            <p class="pt-1 lg:py-5 text-center">Explore our wide range of innovative anti-aging solutions.</p>
-            
-            <div class="grid grid-cols-1 gap-5 md:grid-cols-3 pt-5 md:pt-10">
-                <div class="bg-slate-100 p-5 rounded-2xl shadow-lg">
-                    <img src="./img/icons/flask.png" alt="">
-                    <h4 class="lg:text-xl font-bold pt-3">Peptide Therapy</h4>
-                    <p class="py-3">Boost cellular regeneration and vitality</p>
-                    <div class="flex gap-1 text-[#00c4bb]">
-                        <a class="font-bold text-lg md:text-xl pb-1 underline underline-offset-3 decoration-2">Learn more</a>
-                        <img src="./img/icons/arrow.png" alt="">
-                    </div>
-                </div>
-     
-                <div class="bg-slate-100 p-5 rounded-2xl shadow-lg">
-                    <img src="./img/icons/heart.png" alt="">
-                    <h4 class="lg:text-xl font-bold pt-3">Hormone Replacement</h4>
-                    <p class="py-3">Restore balance, energy, and well-being.</p>
-                    <div class="flex gap-1 text-[#00c4bb]">
-                        <a class="font-bold text-lg md:text-xl pb-1 underline underline-offset-3 decoration-2">Learn more</a>
-                        <img src="./img/icons/arrow.png" alt="">
-                    </div>
-                </div>
+    <!-- ==== MEET RELIVE SECTION ==== -->
+    <section class="py-10 px-5 md:px-10">
+      <div
+        class="grid gap-4 lg:gap-10 xl:gap-1 md:grid-cols-2 items-center text-center md:text-left"
+      >
+        <img class="md:h-full" src="./img/MeetRelive.png" alt="" />
+        <div>
+          <h1 class="text-4xl lg:text-6xl font-semibold">
+            Meet <span class="text-[#00c4bb]">Relive</span>
+          </h1>
+          <p class="py-4 lg:py-7 text-justify">
+            Relive is a premium anti-aging clinic offering advanced,
+            science-based therapies to support longevity and overall wellness.
+            We blend cutting-edge medical technology with personalized care to
+            help you feel your best at any age.
+          </p>
+          <button
+            class="text-white bg-[#00c4bb] py-2 md:py-3 text-center px-5 rounded-full hover:cursor-pointer font-semibold"
+          >
+            Learn more
+          </button>
+        </div>
+      </div>
+    </section>
 
-                <div class="bg-slate-100 p-5 rounded-2xl shadow-lg">
-                    <img src="./img/icons/sun.png" alt="">
-                    <h4 class="lg:text-xl font-bold pt-3">Skin Rejuvenation</h4>
-                    <p class="py-3">Advanced treatments for youthful skin.</p>
-                    <div class="flex gap-1 text-[#00c4bb]">
-                        <a class="font-bold text-lg md:text-xl pb-1 underline underline-offset-3 decoration-2">Learn more</a>
-                        <img src="./img/icons/arrow.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-    </body>
+    <!-- PRODUCTS SECTION -->
+    <section>
+      <div class="text-center px-5 md:px-20">
+        <h1 class="text-4xl lg:text-6xl font-semibold">
+          Meet <span class="text-[#00c4bb]">Relive</span>
+        </h1>
+        <p class="pt-1 lg:py-5 text-justify md:text-center">
+          Relive is a premium anti-aging clinic offering advanced, science-based
+          therapies to support longevity and overall wellness. We blend
+          cutting-edge medical technology with personalized care to help you
+          feel your best at any age.
+        </p>
+      </div>
+    </section>
+
+    <!-- ==== TREATMENTS SECTION ==== -->
+    <section class="py-10 pb-20 md:py-20 px-5 lg:px-10 xl:px-30">
+      <h1 class="text-4xl lg:text-6xl font-semibold text-center">
+        Our Specialized <span class="text-[#00c4bb]">Treatments</span>
+      </h1>
+      <p class="pt-1 lg:py-5 text-center">
+        Explore our wide range of innovative anti-aging solutions.
+      </p>
+
+      <div class="grid grid-cols-1 gap-5 md:grid-cols-3 pt-5 md:pt-10">
+        <div class="bg-slate-100 p-5 rounded-2xl shadow-lg">
+          <img src="./img/icons/flask.png" alt="" />
+          <h4 class="lg:text-xl font-bold pt-3">Peptide Therapy</h4>
+          <p class="py-3">Boost cellular regeneration and vitality</p>
+          <div class="flex gap-1 text-[#00c4bb]">
+            <a
+              class="font-bold text-lg md:text-xl pb-1 underline underline-offset-3 decoration-2"
+              >Learn more</a
+            >
+            <img src="./img/icons/arrow.png" alt="" />
+          </div>
+        </div>
+
+        <div class="bg-slate-100 p-5 rounded-2xl shadow-lg">
+          <img src="./img/icons/heart.png" alt="" />
+          <h4 class="lg:text-xl font-bold pt-3">Hormone Replacement</h4>
+          <p class="py-3">Restore balance, energy, and well-being.</p>
+          <div class="flex gap-1 text-[#00c4bb]">
+            <a
+              class="font-bold text-lg md:text-xl pb-1 underline underline-offset-3 decoration-2"
+              >Learn more</a
+            >
+            <img src="./img/icons/arrow.png" alt="" />
+          </div>
+        </div>
+
+        <div class="bg-slate-100 p-5 rounded-2xl shadow-lg">
+          <img src="./img/icons/sun.png" alt="" />
+          <h4 class="lg:text-xl font-bold pt-3">Skin Rejuvenation</h4>
+          <p class="py-3">Advanced treatments for youthful skin.</p>
+          <div class="flex gap-1 text-[#00c4bb]">
+            <a
+              class="font-bold text-lg md:text-xl pb-1 underline underline-offset-3 decoration-2"
+              >Learn more</a
+            >
+            <img src="./img/icons/arrow.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
